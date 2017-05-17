@@ -68,7 +68,12 @@ The binary specification is available at maven central at these coordinates.
 For convenience, the binary specification is also provided in
 [this zip file](downloads/JSF_2_2/javax.faces-api-2.2-FINAL.zip),
 but by downloading it, you are agreeing to the terms and conditions
-stated [here](downloads/JSF_2_2/000_AAA_eval-spec-license.odt).</p>
+stated [here](downloads/JSF_2_2/000_AAA_eval-spec-license.odt).
+
+## Miscellaneous Downloads
+
+Additional project related downloads are available [here](./DOWNLOADS.md)
+
 
 # Learning More
 
@@ -78,8 +83,8 @@ Some of many JSF 2.3 related articles may be found in
 
 * [JSF 2.3 Pre-Public Review EC Update](https://java.net/downloads/javaserverfaces-spec-public/JSF_2_3/Public%20Review/20170111-JSF_2_3_EC_MEETING.pdf)
   (Ed Burns)
-* [JSF 2.3 new features](http://de.slideshare.net/ConstantinMAlin/jsf-23-new-features-56606253) (Alin Constantin)</li>
-* [What's new in JSF 2.3?](http://arjan-tijms.omnifaces.org/p/jsf-23.html) (Arjan Tjms)</li>
+* [JSF 2.3 new features](http://de.slideshare.net/ConstantinMAlin/jsf-23-new-features-56606253) (Alin Constantin)
+* [What's new in JSF 2.3?](http://arjan-tijms.omnifaces.org/p/jsf-23.html) (Arjan Tjms)
 * [Neues aus der Java-Welt: JavaServer Faces 2.3 (German)](http://arjan-tijms.omnifaces.org/p/jsf-23.html) (Michael Mueller)
 
 ## JSF 2.2
