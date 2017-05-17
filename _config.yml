@@ -1,11 +1,11 @@
 theme: jekyll-theme-architect
 
 title: [javaserverfaces-spec]
-description: [GlassFish's Implementation for JavaServer(TM) Faces]
+description: [JavaServer(TM) Faces Specification]
 
 # sidebar links url
 links:
-  source: https://github.com/javaee/javaserverfaces-spec
+  source: http://jsf.java.net/
   #download:
   #mailinglist:
   #javadocs:

@@ -1,0 +1,87 @@
+EG Meeting 20110429
+
+Agenda
+
+I. work planning JSF_2_2_WORKING_SET
+
+   A. Non-issuetracker loose threads from JSF 2.1
+
+     1. ViewScopedSameViewNavigation
+
+     Status: Understood but Unresolved.  jsr-314-open discussion:
+     201100112 - 20110120
+
+     => kito
+
+     2. CompositeComponentMetadata runtime behavior
+
+     Status: Understood but Unresolved.  jsr-314-open discussion:
+     20110202 - 20110204
+
+     => andy schwartz
+
+     3. PartialStateSaving+TreeVisiting
+
+     Status: Not understood and unresolved.  jsr-314-open discussion:
+     20110128 - 20110208
+
+     => andy schwartz
+
+     4. PostRestoreStateEvent is not published using application.publishEvent
+
+     Action: needs clarification.  I don't think publishEvent can be used.
+
+     => andy schwartz
+
+     5. PostAddToViewEvent 20110123
+
+     => edburns
+
+   B. Issuetracker loose threads from JSF 2.1
+
+     1. 869-CSRF
+
+     Status: Form approach (token in hidden field in form) and URL
+     approach (token in URL).  Need to go back to the drawing board. We
+     need to have it at a per-view level, not per-application.  
+
+     jsr-314-open discussion: 20101022
+
+     => edburns
+
+     2. 742-f:paramInf:ajax
+
+     Status:
+
+        20100210 Ryan created
+
+        20110108 Jakob: sent mail to EG about it
+
+    3. 952-MetadataCompleteTrue
+
+    => edburns    
+
+    4. 901-DeprecateTargets
+
+       Concern is the usage of this "targets" concepts.  The interface
+       has pointers into the implementation section.  We'd like to
+       reverse the ordering so that the impl can "reach out" and point to
+       things in the interface section.  
+
+       => edburns
+
+    5. 802-FileUpload
+
+       => edburns grant ngriffin7a commit access
+
+       => ngriffin7a create branch from trunk and put old school file upload
+
+    6. 479-UIDataCollection
+
+       => edburns the solution will involve how to flatten a Collection
+       into a List.
+
+    
+
+      
+

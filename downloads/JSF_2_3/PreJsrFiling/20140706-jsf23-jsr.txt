@@ -1,0 +1,294 @@
+Title:
+
+JavaServer Faces 2.3 Specification
+
+
+Summary/Description:
+
+This JSR aims to improve the clarity of the existing JavaServer Faces
+(JSF) specification and introduce a small, targeted set of new features
+as directed by community contribution.
+
+Duration:  
+
+2 weeks
+
+Section 1: Identification
+
+Specification Lead: Edward Burns
+E-Mail Address: edward.burns@oracle.com
+Telephone Number:  +1 407 458 0017
+
+Specification Lead: Manfred Riem
+E-Mail Address: manfred.riem@oracle.com
+Telephone Number:  +1 435 225 4289
+
+Initial Group Membership:  TBD
+
+
+Supporting this JSR:  TBD
+
+
+Section 2: Request
+
+2.1 Please describe the proposed Specification:
+
+This JSR aims to improve the clarity of the existing JavaServer Faces
+(JSF) specification and introduce a small, targeted set of new features
+as directed by community contribution.
+
+Requirements are grouped into four major categories: Small scale new
+features, community driven improvements, and platform integration.
+
+Small scale new features
+------------------------
+
+While the scope of new features is intentionally limited, it is
+important to continue to evolve JSF to support the growing needs of
+existing users.  To that end, an enhancement to the JSF Ajax API is
+proposed: namely Ajax method invocation.  This feature allows invoking
+CDI managed bean methods directly from Ajax, allowing the response
+to be sent using Java EE 7 standard JSON.  
+
+Community driven improvements
+-----------------------------
+
+JSF has always been indisputably community focused.  This tradition
+continues in JSF 2.3.  While the set of issues addressed is very much up
+to what the expert group is willing to contribute, some obvious
+suggestions include multi-field validation, @Inject FacesContext, EL
+performance optimizations, and cross-form Ajax clarifications.
+
+Platform integration
+--------------------
+
+Previous versions of JSF intentionally lagged one version behind the
+Java EE version in which it was bundled.  This release abandons this
+approach in favor of being able to leverage platform features from Java
+EE 8 and Java SE 8.  
+
+2.2 What is the target Java platform? (i.e., desktop, server,
+personal, embedded, card, etc.)
+
+This specification is targeted for Java EE 8 or higher platforms. 
+
+2.3 The Executive Committees would like to ensure JSR submitters think
+about how their proposed technology relates to all of the Java
+platform editions. Please provide details here for which platform
+editions are being targeted by this JSR, and how this JSR has
+considered the relationship with the other platform editions.
+
+This specification targets the Java EE 8 Platform. It will be based on
+the corresponding release of the Java SE platform.
+
+2.4 What need of the Java community will be addressed by the proposed specification?
+
+All of the work items in this JSR are a direct response to community
+needs.
+
+2.5 Why isn't this need met by existing specifications?
+
+JSF has been the sole Java EE JSR that deals with user interface
+concerns, thus any UI related needs are dealt with in this
+specification.
+
+2.6 Please give a short description of the underlying technology or
+technologies:
+
+See 2.1 above.
+
+2.7 Is there a proposed package name for the API Specification? (i.e.,
+javapi.something, org.something, etc.)
+
+javax.faces
+
+2.8 Does the proposed specification have any dependencies on specific
+operating systems, CPUs, or I/O devices that you know of?
+
+No.
+
+2.9 Are there any security issues that cannot be addressed by the
+current security model?
+
+The Java SE security model is perfectly sufficient for the needs of this
+specification. There will be security related features in this JSR, but
+these will build on top of the current security model.
+
+2.10 Are there any internationalization or localization issues?
+
+This JSR will use the I18N support in Java SE. 
+
+2.11 Are there any existing specifications that might be rendered
+obsolete, deprecated, or in need of revision as a result of this work?
+
+This specification obsoletes JSF 2.2 (JSR-344).
+
+This specification will work with the Portlet 3.0 (JSR-362)
+specification to facilitate its achievement of delivering Ajax
+functionality for JSF based portlets.
+
+This specification will work with Servlet 4.0 to leverage HTTP/2
+features for the benefit of JSF applications.
+
+2.12 Please describe the anticipated schedule for the development of this specification.
+
+Q3 2014  Expert Group formed
+Q1 2015  Early Draft
+Q3 2015  Public Review 
+Q4 2015  Proposed Final Draft
+Q3 2016  Final Release
+
+2.13 Please describe the anticipated working model for the Expert
+Group working on developing this specification.
+
+We will use the same working model as in JSR-344: primarily email
+discussion with occasional conference calls and other distributed team
+technology uses. See section 2.14 for the transparency measures we will
+use.
+
+The reference implementation will be developed using an Open Source
+development model.
+
+2.14 Provide detailed answers to the transparency checklist, making sure to include URLs as appropriate:
+
+We will leverage the collaborative tools provided by the java.net
+infrastructure. We have established the "javaserverfaces-spec-public"
+project at <http://jsf-spec.java.net>. Therein, we will have a public
+issue tracker for tracking most issues at
+<http://jsf-spec.java.net/issues>.  The reference implementation will be
+developed entirely in the public javaserverfaces project on
+java.net. The TCK will be developed privately by Oracle. We will
+leverage the Early Draft feature of the JCP process to allow the public
+to see the spec in progress.
+
+- Is the schedule for the JSR publicly available, current, and updated
+  regularly?
+
+The schedule will be available on the project site,
+<http://jsf-spec.java.net>, and via the Community tab of the JSR.  The
+official @jsf_spec twitter will be used for infrequent status
+updates.
+
+- Can the public read and/or write to a wiki for the JSR?
+
+The <http://jsf-spec.java.net> project users list
+(users@javaserverfaces-spec-public.java.net) is used for this purpose.
+
+- Is there a publicly accessible discussion board for the JSR that you
+read and respond to regularly?
+
+The <http://jsf-spec.java.net> project users list
+(users@javaserverfaces-spec-public.java.net) is used for this purpose.
+
+- Have you spoken at conferences and events about the JSR recently?
+
+Yes, at JavaOne and JavaLand.
+
+- Are you using open-source processes for the development of the RI
+and/or the TCK?
+
+The RI is being done under the open source GlassFish project at
+http://glassfish.java.net
+
+- What are the Terms of Use required to use the collaboration tools
+you have prepared to use with the Expert Group, so that prospective EG
+members can judge whether they are compatible with the JSPA?
+
+The terms of use are those of java.net: http://www.java.net/javanet-web-site-terms-use
+
+- What is the location of your publicly-accessible Issue list? In
+order to enable EC members to judge whether Issues have been
+adequately addressed, the list must make a clear distinction between
+Issues that are still open, Issues that have been deferred, and those
+that are closed, and must indicate the reason for any change of state.
+
+The publicly-accessible Issue list is available at
+http://jsf-spec.java.net/issues
+
+- What is the mechanism for the public to provide feedback on your JSR?
+
+The public can provide feedback on the JSR by means of the users list.
+
+- Where is the publicly-accessible document archive for your Expert Group?
+
+The publicly-accessible document archive is available at
+
+https://java.net/projects/javaserverfaces-spec-public/downloads
+
+- Does the Community tab for my JSR have links to and information
+about all public communication mechanisms and sites for the
+development of my JSR?
+
+Yes, it will.
+
+- Do you have a Twitter account or other social networking feed which
+people can follow for updates on your JSR?
+
+Yes, @jsf_spec
+
+- Which specific areas of feedback should interested community members
+(such as the Adopt-a-JSR program) provide to improve the JSR (please
+also post this to your Community tab)?
+
+The formation of Adopt-a-JSR groups to provide technical feedback for
+JSF 2.3 is encouraged and supported.
+
+
+2.15 Please describe how the RI and TCK will de delivered, i.e. as
+part of a profile or platform edition, or stand-alone, or
+both. Include version information for the profile or platform in your
+answer.
+
+The RI and TCK for JSF 2.3 will be delivered in the same way they
+were delivered for Java EE 7.
+
+
+2.16 Please state the rationale if previous versions are available
+stand-alone and you are now proposing in 2.13 to only deliver RI and
+TCK as part of a profile or platform edition (See sections 1.1.5 and
+1.1.6 of the JCP 2 document).
+
+N/A
+
+
+2.17 Please provide the full text of the licenses that will apply to your
+Final Release Specification, Reference Implementation, and Technology
+Compatibility Kit, or provide links to the same.
+
+TBD.  No changes are expected from previous release.
+
+
+2.18 Please describe the communications channel you have established
+for the public to observe Expert Group deliberations, provide
+feedback, and view archives of all Expert Group communications
+
+The Expert Group will conduct business on a publicly readable alias.
+The public will have an alias on which to provide feedback and discuss
+issues related to the JSR.  There will also be a publicly accessible
+JIRA and document archive. (See also 2.19 and 2.20 below.)
+
+
+2.19  What is the URL of the Issue Tracker that the public can read,
+and how does the public log issues in the Issue Tracker?
+
+http://jsf-spec.java.net/issues
+
+2.20  Please provide the location of the publicly accessible document
+archive you have created for the Expert Group.
+
+https://java.net/projects/javaserverfaces-spec-public/downloads
+
+Section 3: Contributions
+
+3.1 Please list any existing documents, specifications, or
+implementations that describe the technology. Please include links to
+the documents if they are publicly available.
+
+JSF 2.2
+http://jcp.org/en/jsr/detail?id=344.
+
+
+3.2 Explanation of how these items might be used as a starting point
+for the work.
+
+These specifications will be the starting point for this work.
