@@ -8,7 +8,7 @@ links:
   source: http://jsf.java.net/
   #download:
   #mailinglist:
-  #javadocs:
+  javadocs: https://javaee.github.io/javaserverfaces-spec/doc/javadocs.html
   #docs:
   #faq:
   #mailinglist:
