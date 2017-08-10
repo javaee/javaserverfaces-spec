@@ -7,10 +7,9 @@ description: [JavaServer(TM) Faces Specification]
 links:
   source: https://github.com/javaserverfaces/mojarra
   #download:
-  mailinglist:https://javaee.groups.io/g/jsf-spec/topics
+  mailinglist: https://javaee.groups.io/g/jsf-spec/topics
   #javadocs:
   #docs:
   #faq:
-  #mailinglist:
   #hide_issuetracker: true #set explicitly to 'true' if you don't want to have the issue tracker link displayed
 
