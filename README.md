@@ -39,7 +39,16 @@ versions are available in the
 
 The human readable specification may be downloaded from &lt;[http://jcp.org/](http://jcp.org/en/jsr/detail?id=372)&gt;.
 
-The implementation is also available at maven central at these coordinates.
+The API is available at Maven Central at these coordinates.
+
+    <dependency>
+      <groupId>javax.faces</groupId>
+      <artifactId>javax.faces-api</artifactId>
+      <version>2.3</version>
+      <scope>provided</scope>
+    </dependency
+
+The implementation is also available at these coordinates.
 
     <dependency>
       <groupId>org.glassfish</groupId>
