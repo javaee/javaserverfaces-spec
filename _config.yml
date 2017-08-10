@@ -5,9 +5,9 @@ description: [JavaServer(TM) Faces Specification]
 
 # sidebar links url
 links:
-  source: http://jsf.java.net/
+  source: https://github.com/javaserverfaces/mojarra
   #download:
-  #mailinglist:
+  mailinglist:https://javaee.groups.io/g/jsf-spec/topics
   #javadocs:
   #docs:
   #faq:
