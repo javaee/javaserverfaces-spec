@@ -15,7 +15,7 @@ project hosts the
 There are two implementations of the JSF specification, both of them
 developed with OSI approved Open Source licenses.
 
-* [Oracle Mojarra](http://jsf.java.net)
+* [Oracle Mojarra](http://javaserverfaces.java.net)
 * [Apache MyFaces](http://myfaces.apache.org)
 
 # Current Status
