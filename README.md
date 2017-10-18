@@ -35,7 +35,7 @@ developed with OSI approved Open Source licenses.
 Though JSF 2.3 is complete, Java EE 8 is still under development.  The
 executable implementations of the JSF 2.3 milestones as well as other
 versions are available in the
-[javax.faces repository](https://maven.java.net/content/repositories/releases/org/glassfish/javax.faces/2.3.0/).  This release is included in [GlssFish 5 Builds](https://javaee.github.io/glassfish/download).
+[javax.faces repository](https://maven.java.net/content/repositories/releases/org/glassfish/javax.faces/2.3.0/).  This release is included in [GlassFish 5 Builds](https://javaee.github.io/glassfish/download).
 
 The human readable specification may be downloaded from &lt;[http://jcp.org/](http://jcp.org/en/jsr/detail?id=372)&gt;.
 
