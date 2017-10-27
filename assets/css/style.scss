@@ -3,12 +3,40 @@
 
 @import "{{ site.theme }}";
 
+div.card.logos {
+  background-color: #efc94c;
+  float: left;
+  height: 100px;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  width: 100%;
+}
+
+div.card.logos div {
+  margin: 0 auto;
+  padding: 1% 0;
+}
+
+div.card.logos a {
+  float: left;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+div.card.logos a img {
+  display: block;
+  max-height: 75px;
+  width: auto;
+  height: auto;
+  padding: 0 7%;
+}
+
 header {
   padding-top: 16px;
   padding-bottom: 40px;
   font-family: 'Mukta Vaani', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
   background: url(../images/header-bkg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #E0E0E0;  
 }
 
 header h1 {
@@ -27,8 +55,7 @@ header h2 {
   margin-bottom: 0;
   font-weight: 200;
   line-height: .8;
-  color: #ec7D11; // orange
-  //color: #2879d0; // blue
+  color: #efc94c;
   letter-spacing: 0;
 }
 
