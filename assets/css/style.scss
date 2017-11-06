@@ -17,10 +17,15 @@ div.card.logos div {
 }
 
 div.card.logos a {
-  float: left;
+  flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  flex: 1;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 div.card.logos a img {
@@ -28,7 +33,7 @@ div.card.logos a img {
   max-height: 75px;
   width: auto;
   height: auto;
-  padding: 7%;
+  padding: 0 5%;
 }
 
 header {
