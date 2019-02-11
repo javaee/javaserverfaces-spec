@@ -12,10 +12,11 @@ for authoring component based user interfaces on the
 [Java EE](https://github.com/javaee/) platform.  This particular GitHub
 project hosts the
 [official JSF specification issue tracker](https://github.com/javaee/javaserverfaces-spec/issues).
-There are two implementations of the JSF specification, both of them
+There are three implementations of the JSF specification, all of them
 developed with OSI approved Open Source licenses.
 
-* [Oracle Mojarra](http://javaserverfaces.java.net)
+* [Eclipse Mojarra](https://projects.eclipse.org/projects/ee4j.mojarra)
+* [Oracle Mojarra](https://javaserverfaces.github.io)
 * [Apache MyFaces](http://myfaces.apache.org)
 
 # Current Status
@@ -32,10 +33,12 @@ developed with OSI approved Open Source licenses.
 
 ## JSF 2.3
 
-Though JSF 2.3 is complete, Java EE 8 is still under development.  The
-executable implementations of the JSF 2.3 milestones as well as other
-versions are available in the
-[javax.faces repository](https://maven.java.net/content/repositories/releases/org/glassfish/javax.faces/2.3.0/).  This release is included in [GlssFish 5 Builds](https://javaee.github.io/glassfish/download).
+JSF 2.3 and Java EE 8 are complete.  The executable implementations of
+the JSF 2.3 milestones as well as other versions are available in the
+[javax.faces
+repository](https://maven.java.net/content/repositories/releases/org/glassfish/javax.faces/2.3.0/).
+This release is included in [GlssFish 5
+Builds](https://javaee.github.io/glassfish/download).
 
 The human readable specification may be downloaded from &lt;[http://jcp.org/](http://jcp.org/en/jsr/detail?id=372)&gt;.
 
@@ -53,7 +56,7 @@ The implementation is also available at these coordinates.
     <dependency>
       <groupId>org.glassfish</groupId>
       <artifactId>javax.faces</artifactId>
-      <version>2.3.0</version>
+      <version>2.3.8</version>
       <scope>provided</scope>
     </dependency>
 
